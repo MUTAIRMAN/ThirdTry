@@ -1,13 +1,16 @@
+
 package muthu;
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -21,6 +24,11 @@ public class Naukri {
 	  driver.get("https://www.naukri.com/mnjuser/homepage?id=");
 	  driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
       driver.manage().window().maximize();
+    
+      String color=driver.findElement(By.xpath("//button[@type='submit']")).getCssValue("background-color");
+      String hex = Color.fromString(color).asHex();
+      System.out.println(hex);
+
 	  driver.findElement(By.xpath("//*[@id='usernameField']")).sendKeys("mpmuthu59@gmail.com");
 	  driver.findElement(By.xpath("//*[@id='passwordField']")).sendKeys("MUTdim5");
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

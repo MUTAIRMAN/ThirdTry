@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.organization.name.SalesforceReg.com.organization.name.SalesforceReg.Naukri">
+      <class name="google">
         <methods>
-          <include name="f"/>
+          <include name="google"/>
+          <include name="quit"/>
+          <include name="start"/>
         </methods>
-      </class> <!-- com.organization.name.SalesforceReg.com.organization.name.SalesforceReg.Naukri -->
+      </class> <!-- google -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

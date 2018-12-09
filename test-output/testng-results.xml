@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="103731" started-at="2018-10-30T02:22:40Z" finished-at="2018-10-30T02:24:24Z">
+  <suite name="Suite" duration-ms="17180" started-at="2018-12-09T06:56:11Z" finished-at="2018-12-09T06:56:29Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="103731" started-at="2018-10-30T02:22:40Z" finished-at="2018-10-30T02:24:24Z">
-      <class name="muthu.Naukri">
-        <test-method status="PASS" signature="f()[pri:0, instance:muthu.Naukri@3532ec19]" name="f" duration-ms="103696" started-at="2018-10-30T02:22:40Z" finished-at="2018-10-30T02:24:24Z">
+    <test name="Test" duration-ms="17180" started-at="2018-12-09T06:56:11Z" finished-at="2018-12-09T06:56:29Z">
+      <class name="google">
+        <test-method status="PASS" signature="start()[pri:0, instance:google@91161c7]" name="start" is-config="true" duration-ms="15569" started-at="2018-12-09T06:56:11Z" finished-at="2018-12-09T06:56:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- muthu.Naukri -->
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="google()[pri:0, instance:google@91161c7]" name="google" duration-ms="767" started-at="2018-12-09T06:56:27Z" finished-at="2018-12-09T06:56:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- google -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:google@91161c7]" name="quit" is-config="true" duration-ms="815" started-at="2018-12-09T06:56:28Z" finished-at="2018-12-09T06:56:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- google -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

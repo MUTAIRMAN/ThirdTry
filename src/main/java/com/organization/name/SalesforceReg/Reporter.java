@@ -11,9 +11,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
 
 
@@ -72,6 +74,19 @@ public class Reporter {
   	  FileHandler.copy(SrcFile, DestFile);
   	  
   	  
+    }
+    
+    public static void highlight(WebDriver driver,WebElement Wt) throws InterruptedException
+    {
+	JavascriptExecutor js=(JavascriptExecutor)driver;
+	for(int i=0;i<=1;i++)
+	{
+		js.executeScript("arguments[0].style.border='3px solid red'",Wt);
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].style.border=''",Wt);
+		Thread.sleep(2000);
+
+	}    
     }
 	
 }

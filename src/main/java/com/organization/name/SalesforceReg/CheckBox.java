@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,6 +22,19 @@ public class CheckBox {
 	  driver.get("C:\\Users\\Muthukumar\\Documents\\Code\\WebTable.html");
 	  
 	  WebElement Wt=driver.findElement(By.xpath("//table"));
+	  
+	    	JavascriptExecutor js=(JavascriptExecutor)driver;
+	    	for(int i=0;i<=1;i++)
+	    	{
+	    		js.executeScript("arguments[0].style.border='3px solid red'",Wt);
+	    		Thread.sleep(2000);
+	    		js.executeScript("arguments[0].style.border=''",Wt);
+	    		Thread.sleep(2000);
+
+	    	}
+	    	
+	    	
+	    
 	  List Rows=Wt.findElements(By.tagName("tr"));
 	  int nRow=Rows.size();
 	  

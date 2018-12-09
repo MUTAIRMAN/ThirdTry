@@ -39,7 +39,7 @@ public class NewTest {
 		 driver.navigate().back();
 		 
 		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("abodeQA")));
-		 
+		 Reporter.highlight(driver,driver.findElement(By.linkText("abodeQA")));
 		 Select color=new Select(driver.findElement(By.id("SelectID_One")));
 		 
 		 
